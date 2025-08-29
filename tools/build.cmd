@@ -32,3 +32,6 @@ echo   dotnet run --project src\NWinSnow
 echo.
 echo Or build a single-file executable with:
 echo   tools\package.cmd
+echo.
+echo To clean up build artifacts:
+echo   dotnet clean

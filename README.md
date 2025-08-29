@@ -20,6 +20,32 @@ A modern C#/.NET application that displays animated falling snow on Windows syst
 
 ### Build and Run
 
+#### Using Makefile (Recommended)
+```bash
+# Build the project
+make build
+
+# Run with default settings (wallpaper mode)
+make run
+
+# Display mode helpers
+make wallpaper           # Wallpaper mode with default settings
+make screensaver         # Screensaver mode (press ESC to exit)
+make windowed            # Windowed mode for testing
+
+# Demo modes with enhanced settings
+make wallpaper-demo      # Enhanced wallpaper with more trees
+make screensaver-demo    # Heavy snow screensaver
+make windowed-demo       # Windowed with custom settings
+
+# Create single-file executable
+make package
+
+# Show all available commands
+make help
+```
+
+#### Using .NET CLI Directly
 ```bash
 # Build the project
 tools\build.cmd
@@ -122,6 +148,33 @@ src/
 
 ### Build Commands
 
+#### Using Makefile
+```bash
+# Build commands
+make build                # Release build (calls tools\build.cmd)
+make debug                # Debug build
+make package              # Create single-file executable
+make clean                # Clean build artifacts
+make install              # Build and package for distribution
+
+# Run commands
+make run                  # Run in wallpaper mode
+make wallpaper            # Wallpaper mode with default settings
+make screensaver          # Screensaver mode (press ESC to exit)
+make windowed             # Windowed mode for testing
+
+# Demo commands with enhanced settings
+make wallpaper-demo       # Enhanced wallpaper with more trees and wind
+make screensaver-demo     # Heavy snow screensaver with strong wind
+make windowed-demo        # Windowed with custom frame rate and settings
+make test-run             # Quick test in windowed mode
+
+# Utility commands
+make info                 # Show project information
+make help                 # Show all available commands
+```
+
+#### Using .NET CLI Directly
 ```bash
 dotnet build              # Debug build
 dotnet build -c Release   # Optimized release build
