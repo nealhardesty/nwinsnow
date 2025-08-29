@@ -1,0 +1,48 @@
+---
+description: Core software development principles and standards
+globs: []
+alwaysApply: true
+---
+
+# General Software Development Principles
+
+## Core Development Philosophy
+
+### Research & Understanding First
+- **ALWAYS** read through relevant documentation and specifications before starting work
+- Think hard, take time, be thorough - do not rush implementation
+- Do your research and make sure any documentation references are loaded, read, and thoroughly understood
+- Stay focused and maintain project scope boundaries
+- Do not allow for hallucinations. If a rule, spec, prompt, or documentation is not understood perfectly, ask the user for more information
+
+### Software Development Principles
+- **KISS**: Keep It Simple (when possible) - prefer straightforward solutions over complex ones
+- **DRY**: Don't Repeat Yourself - extract common functionality and avoid code duplication
+- **Documentation**: Keep comments and README.md up to date ALWAYS - documentation is key
+- Be creative within bounds, but don't go off the "deep end"
+
+### Tests
+- Implement unit tests **ALWAYS**
+- Implement functional tests when it makes sense
+- Always create a CLI helper test script to exercise functionality from the command line. Create this under a `scripts/` directory appropriate for the project. When possible, make this a general purpose script
+
+### Makefile
+- Makefiles for common build/run/test steps is always helpful
+
+### Quality & User Experience
+- UI should look good to humans but prioritize being quick and functional
+- Write clean, maintainable code that others can understand
+- Test thoroughly with proper error handling
+- Prioritize understanding over speed of implementation
+
+### Code Organization
+- Maintain clear separation of concerns
+- Extract common functionality into reusable components
+- Keep functions focused and under reasonable length
+- Use meaningful names that clearly describe purpose
+
+### Documentation Standards
+- Keep inline comments up to date with code changes
+- **Important**: Maintain README.md files with current setup and usage instructions (create them if they don't exist)
+- Document complex logic and business rules clearly
+- Include examples in documentation when helpful
