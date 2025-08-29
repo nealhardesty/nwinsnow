@@ -1,0 +1,4 @@
+C:\Users\neal\dev\nwinsnow\src\NWinSnow\bin\Release\net6.0-windows\win-x64\publish\NWinSnow.pdb
+C:\Users\neal\dev\nwinsnow\src\NWinSnow\bin\Release\net6.0-windows\win-x64\publish\appsettings.json
+C:\Users\neal\dev\nwinsnow\src\NWinSnow\bin\Release\net6.0-windows\win-x64\publish\NWinSnow.Resources.pdb
+C:\Users\neal\dev\nwinsnow\src\NWinSnow\bin\Release\net6.0-windows\win-x64\publish\NWinSnow.exe
