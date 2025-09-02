@@ -24,7 +24,13 @@ static class Program
             return;
         }
 
-        using var form = new MainForm(appConfig);
+        IntPtr wallpaperParent = IntPtr.Zero;
+        if (appConfig.Display.Mode == Config.DisplayMode.Wallpaper)
+        {
+            wallpaperParent = WallpaperHelper.FindWallpaperTarget();
+        }
+
+        using var form = new MainForm(appConfig, wallpaperParent);
 
         switch (appConfig.Display.Mode)
         {
