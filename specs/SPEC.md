@@ -43,7 +43,7 @@ Cascading configuration with precedence order:
 ### Display Modes
 The application supports three distinct modes:
 
-- **Wallpaper Mode**: Renders behind desktop icons, integrated with Windows desktop
+- **Wallpaper Mode**: Renders in front of desktop icons but behind application windows (blanks out icons), integrated with Windows desktop
 - **Screensaver Mode**: Full-screen overlay, exits on ESC key
 - **Windowed Mode**: Standard resizable window for development/testing
 
